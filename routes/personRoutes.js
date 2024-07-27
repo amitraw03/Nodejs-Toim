@@ -24,6 +24,7 @@ router.post('/', async (req, res) => {
 //GEt Method to get the person
 router.get('/', async (req, res) => {
     try {
+        
         const data = await Person.find();
         console.log('data Fetched!!');
         res.status(200).json(data);

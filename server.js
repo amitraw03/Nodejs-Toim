@@ -37,7 +37,7 @@ const personRoutes= require('./routes/personRoutes');
 const menuListRoutes=require('./routes/menuListRoutes');
 
 //use the routers
-app.use('/person',localAuthMiddleware,personRoutes);
+app.use('/person',personRoutes);   //localAuthMiddleware need to remove to let work the jsonAuthMiddleware
 app.use('/menu',menuListRoutes);
 
 
